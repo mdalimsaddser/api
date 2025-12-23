@@ -1,0 +1,10 @@
+{
+  "name": "sms-api-vercel",
+  "version": "1.0.0",
+  "description": "SMS API Dashboard running on Vercel",
+  "main": "api/smscdr.js",
+  "scripts": {
+    "start": "vercel dev"
+  },
+  "dependencies": {}
+}
