@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SMS API Dashboard</title>
+</head>
+<body>
+    <h1>SMS Records Dashboard</h1>
+    <button id="loadData">Load Data</button>
+    <pre id="result"></pre>
+
+    <script>
+        document.getElementById("loadData").addEventListener("click", async () => {
+            const res = await fetch("/api/smscdr");
+            const data = await res.json();
+            document.getElementById("result").textContent = JSON.stringify(data, null, 2);
+        });
+    </script>
+</body>
+</html>
